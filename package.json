@@ -1,0 +1,46 @@
+{
+  "name": "@adviverse/angular",
+  "version": "0.1.0",
+  "description": "Angular standalone component and NgModule for Adviverse ad slots.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adviverse/angular.git"
+  },
+  "homepage": "https://github.com/Adviverse/angular#readme",
+  "bugs": {
+    "url": "https://github.com/Adviverse/angular/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json -c tsconfig.lib.prod.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "prepublishOnly": "echo 'Publish from dist: cd dist && npm publish' && exit 1"
+  },
+  "keywords": [
+    "adviverse",
+    "ads",
+    "angular",
+    "adslot"
+  ],
+  "peerDependencies": {
+    "@angular/core": ">=17",
+    "@angular/common": ">=17"
+  },
+  "dependencies": {
+    "@adviverse/element": "^0.1.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "ng-packagr": "^17.3.0",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.6.0",
+    "typescript": "~5.4.5",
+    "zone.js": "^0.14.0"
+  }
+}
